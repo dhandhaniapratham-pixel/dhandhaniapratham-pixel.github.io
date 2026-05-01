@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F1 2026: The Spec Sheet</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="shortcut icon" href="favicon/favicon.ico">
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="favicon/android-chrome-512x512.png">
+  
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+
+  <header class="header">
+    <label for="sidebar-toggle" class="hamburger">
+      <span></span><span></span><span></span>
+    </label>
+    <div class="logo">F1 <span>2026</span></div>
+    <div class="top-controls">
+      <button onclick="goBack()" class="control-btn">◀ Back</button>
+      <button onclick="toggleDarkMode()" class="control-btn">🌗 Mode</button>
+    </div>
+  </header>
+
+  <aside class="sidebar">
+    <h3>Menu + F1 Related Links</h3>
+    <ul>
+      <li><a href="index.html">1. The Launchpad</a></li>
+      <li><a href="evolution.html">2. Spec Sheet</a></li>
+      <li><a href="paddock.html">3. The Paddock</a></li>
+      
+      <li style="margin-top: 2rem; border-top: 1px solid #333; padding-top: 1rem;">
+        <a href="https://www.fia.com/" target="_blank">FIA Regulations ↗</a>
+      </li>
+      <li>
+        <a href="https://www.formula1.com/" target="_blank">Formula1.com ↗</a>
+      </li>
+      <li style="margin-top: 2rem; border-top: 1px solid #333; padding-top: 1rem;">
+        <a href="https://f1experiences.com/calendar-of-events" target="_blank">F1 Race Calender ↗</a>
+      </li>
+    </ul>
+  </aside>
+
+  <main class="main-content">
+    <section id="specs" class="page-section">
+      <h2 style="text-align: center;">The Spec Sheet: 2025 vs. 2026</h2>
+      <p style="text-align: center; margin-bottom: 2rem;">Hover over the table rows below to analyze the data telemetry.</p>
+      
+      <div class="card" style="margin-bottom: 2.5rem;">
+        <table>
+          <thead>
+            <tr>
+              <th>Technical Feature</th>
+              <th>2025 Specification</th>
+              <th>2026 Specification</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Overall Weight</td>
+              <td>798 kg</td>
+              <td class="spec-target">768 kg (Lighter)</td>
+            </tr>
+            <tr>
+              <td>Maximum Width</td>
+              <td>2000 mm</td>
+              <td class="spec-target">1900 mm (Agile)</td>
+            </tr>
+            <tr>
+              <td>Electrical Power</td>
+              <td>120 kW</td>
+              <td class="spec-target">350 kW (3x Power)</td>
+            </tr>
+            <tr>
+              <td>Aerodynamics</td>
+              <td>Fixed / DRS</td>
+              <td class="spec-target">Active Aero (X/Z Mode)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="grid-container">
+        <div class="card">
+          <h3>Chassis Evolution</h3>
+          <p>The ground effect floors introduced in 2022 are being simplified for 2026. The shift reduces reliance on underfloor downforce, drastically altering team development strategies to achieve peak aerodynamic efficiency.</p>
+        </div>
+        <div class="card">
+          <img src="media/Ferrari comparison photo.png" alt="Side-by-side comparison">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="JS/script.js"></script>
+  <footer style="background-color: var(--card-bg); padding: 2rem; text-align: center; border-top: 2px solid var(--primary-accent);">
+    <p style="color: var(--text-muted);">&copy; 2026 Pratham Dhandhania. All rights reserved. Built for the New Era.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F1 2026: The Launchpad</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="shortcut icon" href="favicon/favicon.ico">
+  
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="favicon/android-chrome-512x512.png">
+  
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle">
+
+  <header class="header">
+    <label for="sidebar-toggle" class="hamburger">
+      <span></span><span></span><span></span>
+    </label>
+    <div class="logo">F1 <span>2026</span></div>
+    <div class="top-controls">
+      <button onclick="goBack()" class="control-btn">◀ Back</button>
+      <button onclick="toggleDarkMode()" class="control-btn">🌗 Mode</button>
+    </div>
+  </header>
+
+  <aside class="sidebar">
+    <h3>Menu + F1 Related Links</h3>
+    <ul>
+      <li><a href="index.html">1. The Launchpad</a></li>
+      <li><a href="evolution.html">2. Spec Sheet</a></li>
+      <li><a href="paddock.html">3. The Paddock</a></li>
+      
+      <li style="margin-top: 2rem; border-top: 1px solid #333; padding-top: 1rem;">
+        <a href="https://www.fia.com/" target="_blank">FIA Regulations ↗</a>
+      </li>
+      <li>
+        <a href="https://www.formula1.com/" target="_blank">Formula1.com ↗</a>
+      </li>
+      <li style="margin-top: 2rem; border-top: 1px solid #333; padding-top: 1rem;">
+        <a href="https://f1experiences.com/calendar-of-events" target="_blank">F1 Race Calender ↗</a>
+      </li>
+    </ul>
+  </aside>
+
+  <main class="main-content">
+    <section id="launchpad" class="page-section">
+      <h2 class="levitate" style="text-align: center;">The Launchpad: 2026 Regulations</h2>
+      <img src="media/Aston martin.png" alt="F1 2026 Car Concept - Aston Martin" class="levitate" style="margin: 0 auto 3rem auto;">
+      
+      <div class="grid-container">
+        <div class="card">
+          <h3>The New Era of Racing</h3>
+          <p>Welcome to the most significant regulation shift in modern Formula 1. The 2026 regulations introduce agile concepts, a 300% increase in electrical power deployment, and "Active Aero" modes.</p>
+          <div class="status-box" id="systemStatus">System Status: Idle</div>
+          <button class="f1-btn" onclick="engageSystem()">Start Your Engine</button>
+        </div>
+        
+        <div class="card">
+          <h3>Top Goals for 2026</h3>
+          <ul>
+            <li><strong>1. Closer Racing:</strong> Nimbler cars designed to follow tightly.</li>
+            <li><strong>2. Lighter & Smaller:</strong> Improved track dynamics.</li>
+            <li><strong>3. Net Zero Carbon:</strong> 100% sustainable fuels.</li>
+          </ul>
+          <img src="media/Stake F1.png" alt="Stake F1 Conceptual Render" style="margin-top: 1.5rem;">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="JS/script.js"></script>
+  <footer style="background-color: var(--card-bg); padding: 2rem; text-align: center; border-top: 2px solid var(--primary-accent);">
+    <p style="color: var(--text-muted);">&copy; 2026 Pratham Dhandhania. All rights reserved. Built for the New Era.</p>
+  </footer>
+</body>
+</html>
